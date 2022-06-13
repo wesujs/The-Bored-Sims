@@ -4,7 +4,7 @@ import Home from './components/Sections/Home'
 import About from './components/Sections/About'
 import Timeline from './components/Sections/Timeline'
 import Shows from './components/Sections/Shows'
-import Me from './components/Sections/Me'
+import Creators from './components/Sections/Creators'
 import Faq from './components/Sections/Faq'
 import Footer from './components/Footer'
 import GlobalStyles from "./styles/GlobalStyles";
@@ -21,7 +21,7 @@ function App() {
       <About />
       <Timeline />
       <Shows />
-      <Me />
+      <Creators />
       <Faq />
       <Footer />
     </ThemeProvider>
