@@ -22,15 +22,43 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 70rem) {
+    width: 85%;
+  }
+
+ 
+  @media (max-width: 64rem) {
+    width: 100%;
+    flex-direction: column;
+
+    &>*:last-child {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 40rem) {
+
+    &>*:last-child {
+      width: 90%;
+    }
+  }
 `;
 
 const Box = styled.div`
   width: 50%;
   height: 100%;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+
+  @media (max-width: 64rem) {
+    min-height: 50vh;
+  }
+
 `;
 const Title = styled.h2`
   font-size: ${(props) => props.theme.fontxxl};
@@ -39,6 +67,19 @@ const Title = styled.h2`
   color: ${(props) => props.theme.body};
   align-self: flex-start;
   margin: 0 auto;
+
+  @media (max-width: 64rem) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (max-width: 40rem) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
+
+  @media (max-width: 30rem) {
+    font-size: ${(props) => props.theme.fontlg};
+  }
 `;
 
 const Subtext = styled.p`
@@ -48,6 +89,20 @@ const Subtext = styled.p`
   align-self: flex-start;
   margin: 1rem auto;
   font-weight: 400;
+
+  @media (max-width: 64rem) {
+    width: 100%;
+    text-align: center;
+    font-size: ${(props) => props.theme.fontlg};
+  }
+
+  @media (max-width: 40rem) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
+
+  @media (max-width: 30rem) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
 `;
 
 const SubtextLight = styled.p`
@@ -57,17 +112,40 @@ const SubtextLight = styled.p`
   align-self: flex-start;
   margin: 1rem auto;
   font-weight: 400;
+
+  @media (max-width: 64rem) {
+    width: 100%;
+    text-align: center;
+    font-size: ${(props) => props.theme.fontlg};
+  }
+
+  @media (max-width: 40rem) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
+
+  @media (max-width: 30rem) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
 `;
 
 const ButtonContainer = styled.div`
 width: 80%;
 margin: 1rem auto;
+display: flex;
 align-self: flex-start;
+
+@media (max-width: 64rem) {
+  width: 100%;
+
+  button {
+    margin: 0 auto;
+  }
+}
 `
 
 const About = () => {
   return (
-    <Section>
+    <Section id='about'>
       <Container>
         <Box>
           {" "}

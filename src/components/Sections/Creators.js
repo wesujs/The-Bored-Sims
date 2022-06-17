@@ -117,7 +117,7 @@ const MemberComponent = ({img, name=" ", position=" "}) => {
 
 const Creators = () => {
   return (
-    <Section>
+    <Section id='creators'>
     <Confet />
       <Title>Creators</Title>
       <Container>

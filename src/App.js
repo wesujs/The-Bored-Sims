@@ -8,7 +8,9 @@ import Creators from './components/Sections/Creators'
 import Faq from './components/Sections/Faq'
 import Footer from './components/Footer'
 import GlobalStyles from "./styles/GlobalStyles";
-import {light} from './styles/Themes'
+import {dark, light} from './styles/Themes'
+import ScrollToTop from "./components/ScrollToTop";
+import './App.css'
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
       <Faq />
       <Footer />
     </ThemeProvider>
+    <ScrollToTop />
     </>
   );
 }

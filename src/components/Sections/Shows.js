@@ -134,7 +134,7 @@ const Shows = () => {
 
 
   return (
-    <Section>
+    <Section id='shows'>
       <Row direction="none" ref={Row1Ref}>
         <NftItem img={img1} number={127} price={2.3} passRef={Row1Ref}  />
         <NftItem img={img2} number={76} price={5.5}  passRef={Row1Ref} />

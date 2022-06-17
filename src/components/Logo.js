@@ -10,14 +10,20 @@ transition: all 0.2s ease;
 
 
 &:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
+
+    @media (max-width: 64em) {
+      font-size: ${props => props.theme.fontxxl}
+    }
+
+
 }
 `
 const Logo = () => {
   return (
     <LogoText>
     <Link to='/'>
-    U.
+    B.
     </Link>
     </LogoText>
   )

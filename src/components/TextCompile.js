@@ -11,7 +11,7 @@ const Title = styled.h2`
   align-self: flex-start;
 
   .text-1 {
-    color: black;
+    color: pink;
     text-transform: uppercase;
     font-family: 'Akaya Telivigala', cursive;
   }
@@ -24,7 +24,23 @@ const Title = styled.h2`
     color: yellow;
     text-transform: uppercase;
     font-family: 'Akaya Telivigala', cursive;
+  
   }
+
+  @media (max-width: 70rem) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
+  @media (max-width: 48rem) {
+    align-self: center;
+    text-align: center;
+  }
+
+  @media (max-width: 40rem) {
+    width: 90%;
+  }
+
+
+
 `
 
 const SubTitle = styled.h3`
@@ -35,18 +51,40 @@ font-weight: 600;
 margin-bottom: 1rem;
 width: 80%;
 align-self: flex-start;
+
+@media (max-width: 40rem) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
+  
+  @media (max-width: 48rem) {
+    align-self: center;
+    text-align: center;
+  }
+
+  @media (max-width: 40rem) {
+    width: 90%;
+  }
 `
 
 const ButtonContainer = styled.div`
 width: 80%;
 align-self: flex-start;
+  @media (max-width: 48rem) {
+    align-self: center;
+    text-align: center;
+
+    button {
+      margin: 0 auto;
+    }
+  }
+
 `
 
 const TextCompile = () => {
   return (
     <>
         <Title>
-        A New World Of NFT's
+        A New World of Boredom
       <Typewriter
       options={{
         autoStart: true,
