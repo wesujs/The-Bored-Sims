@@ -11,6 +11,7 @@ import img7 from '../../assets/Nfts/bighead-7.svg'
 import img8 from '../../assets/Nfts/bighead-8.svg'
 import img9 from '../../assets/Nfts/bighead-9.svg'
 import img10 from '../../assets/Nfts/bighead-10.svg'
+import Confet from '../Confetti'
 
 const Section = styled.section`
   min-height: 100vh;
@@ -50,6 +51,9 @@ position: relative;
 
 border: 2px solid ${props => props.theme.text};
 border-radius: 20px;
+
+backdrop-filter: blur(4px);
+z-index: 5;
 
 
 &:hover{
@@ -114,6 +118,7 @@ const MemberComponent = ({img, name=" ", position=" "}) => {
 const Creators = () => {
   return (
     <Section>
+    <Confet />
       <Title>Creators</Title>
       <Container>
         <MemberComponent img={img8} name="Wes" position="Founder" />
