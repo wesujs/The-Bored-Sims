@@ -1,7 +1,11 @@
 {
   "name": "Bored Sims",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://wesujs.github.io/The-Bored-Sims/",
+=======
+  "homepage": "https://gitname.github.io/react-gh-pages",
+>>>>>>> f73e364f01ddaeba0e0c4c6223ff431178055bd2
   "private": true,
   "dependencies": {
     "@fontsource/akaya-telivigala": "^4.5.6",
